@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+}
+
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.sidebar ul li:hover{
+  padding: 0%;
+background-color: #555;
+padding: 0px;
+}
+
+.sidebar ul li a {
+  background-color: #333;
+  color: #bebcbc;
+  text-decoration: none;
+}
+.sidebar h2{
+  background-color: blue;
+  height: 60px;
+}
+
+
+.sidebar ul li a:hover {
+  background-color: #555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  flex: 1;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#genre{
+  width:130px;
+}
+#platform{
+
+  width: 130px;
+}
+#prospect_name,#platform,#genre,#status,#subscribers,#views{
+  background-color: #f4f4f4;
+}
+#search{
+  margin-top: 5%;
+  width: 250px;
+  height: 40px;
+  color: white;
+  background-color: rgb(72, 233, 72);
+  border-radius: 5px;
+  border-color:rgb(72, 233, 72) ;
+  font-size: 20px;
+}
+
+
+.prospect-section {
+  margin-bottom: 20px;
+  background-color: #fff; /* White box for prospect details */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.input-col {
+  flex: 1;
+  margin-right: 5px;
+  margin-bottom: px;
+}
+
+.input-col:last-child {
+  margin-right: 0;
+}
+
+.input-col label {
+  display: block;
+  margin-bottom: 5px;
+}
+#platform,#genre{
+  width: 120px;
+  padding: 9px;
+  border: 1px solid #f7f3f3;
+  border-radius: 5px;
+
+}
+.input-col input,#status,#subscribers,#views {
+  width: 250px;
+  padding: 9px;
+  border: 1px solid #f7f3f3;
+  border-radius: 5px;
+}
+
+
+.stats-section {
+  margin-bottom: 5px;
+}
+
+.stats-section h3 {
+  margin-bottom: 5px;
+}
+
+.stats-row {
+  display: flex;
+}
+
+.stat-box {
+  flex: 1;
+  text-align: center;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.stat-box img {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+.stat-box div{
+  padding: 5px;
+  text-align: left;
+  font-size:14px;
+}
+.stat-box .name{
+  text-align: center;
+  font-weight: bold;
+}
+.recent-activity {
+  width: 250px;
+  padding: 20px;
+  background-color: #ebebeb;
+  overflow-y: auto; 
+  max-height: calc(100vh - 40px);
+}
+
+.recent-activity h3 {
+  margin-bottom: 20px;
+}
+.recent-activity div{
+  padding: 5px;
+  background-color: #e4e5e7;
+}
+.recent-activity .id{
+  font-weight: 600;
+  font-size: 15px;
+}
+.recent-activity .description{
+  font-size: 13px;
+}
+.recent-activity .time{
+  font-size:13px ;
+  color: #b1afaf;
+}
+
+.activity-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
